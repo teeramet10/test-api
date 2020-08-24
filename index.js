@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const API_PORT = process.env.PORT || 3002
 
 const routes = require('./routes')
 
@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
 
 app.use(routes.test)
 
-app.listen(port)
+app.listen(API_PORT)
