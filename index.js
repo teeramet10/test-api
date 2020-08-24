@@ -10,6 +10,4 @@ app.get('/', (req, res) => {
 
 app.use(routes.test)
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(port)
